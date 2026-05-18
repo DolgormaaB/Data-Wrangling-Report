@@ -50,5 +50,40 @@ Here we're gonna group our data by a category and calculate things like **skewne
 
 Let's group the Airbnb **prices** by **borough** to see how the distributions look across different areas of New York.
 
+# Interpretation: Price by Borough
 
+**1. Manhattan:** Unsurprisingly, Manhattan commands the highest median and mean prices. The standard deviation here is massive, indicating a huge gap between standard apartments and ultra-luxury penthouses. 
+* **Shape:** The skewness is extremely positive, confirming that while most listings hover around a typical base rate (e.g., $150), a few incredibly expensive outliers drag the tail far to the right. The high kurtosis indicates a sharp peak of "standard" prices, surrounded by these extreme anomalies.
+
+**2. Brooklyn:**
+Brooklyn shows the second-highest average prices. It has a slightly lower standard deviation than Manhattan, meaning prices are marginally more predictable.
+* **Shape:** The skewness and kurtosis are still highly positive, but less severe than Manhattan. This means there are fewer extreme luxury outliers, and the distribution is slightly flatter.
+
+**3. Queens, Bronx, and Staten Island:**
+These boroughs have significantly lower median prices and a much tighter Interquartile Range (IQR). If you are booking here, the prices are highly consistent.
+* **Shape:** While still positively skewed (since prices can't go below $0 but can always go higher), the kurtosis here is heavily peaked. The vast majority of hosts in these boroughs price their listings very similarly, making the data highly clustered around the median.
+
+---
+
+# Cross Sectional Analysis: Price by Room Type
+
+To get an even better picture, we can also group **prices** by **room_type**. This helps us understand exactly what you're paying for.
+
+# Interpretation:
+
+**1. Entire home/apt:**
+This category has the widest dispersion (highest standard deviation and IQR). This makes logical sense because an "entire place" could be anything from a tiny 1-bedroom studio in the Bronx to a 5-bedroom penthouse in Manhattan. The long right tail (positive skewness) is primarily driven by this category.
+
+**2. Private room:**
+There is a drastic drop in both mean and median prices compared to entire homes. 
+* **Shape:** The distribution here has extremely high kurtosis. This means the pricing is highly competitive and clustered. The vast majority of private rooms are priced within a very tight bracket (e.g., $50 to $80), with very little variation between hosts.
+
+**3. Shared room:**
+As expected, this is the cheapest option. The variance and standard deviation are very small here. The data is tightly packed around a low median, meaning if you are looking for a shared room, the market rate is virtually identical across the board with almost no high-priced outliers.
+
+---
+
+# Summary of Univariate Analysis
+
+Our univariate and cross-sectional exploration reveals that the New York Airbnb market is heavily segmented. If we look at the dataset as a whole, the mean price is distorted by extreme luxury outliers, making the **median** the most reliable metric for a typical user. Furthermore, a listing's price and availability are deeply tied to its **borough** and **room type**—with Manhattan entire-homes acting as the primary drivers of our high variance and positive skewness, while private rooms in outer boroughs provide highly consistent, predictable pricing.
 
