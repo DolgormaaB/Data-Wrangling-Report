@@ -1,6 +1,6 @@
 # Univariate Analysis 
 
-## Categorical Variavbles 
+## Categorical Variables 
 When we talk about nominal data like room_type or borough, we can't calculate mean or standard deviation since they don't give us any particularly meaningful observations.
 
 Instead, we look at frequencies, percentages, and mode. 
