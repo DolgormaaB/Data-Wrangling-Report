@@ -1,5 +1,7 @@
 Qualitative vs. Qualitative Correlation
+
 Cramer's V
+
 Hypothesis: 
 Types of rooms booked differ in by location
 
