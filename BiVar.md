@@ -1,5 +1,7 @@
 # Bivariate Analysis Report: AirBnb Dataset
 
+[See the full bivariate analysis workflow in the notebook](https://colab.research.google.com/drive/1NXwLJUqh_mzVSZJ1N33aDKSZMJGxIv_l?usp=sharing)
+
 In this section, we review different ways of bivariate analysis to understand the relationships between different variables in our dataset. We evaluate these relationships under two main categories: Quantitative and Qualitative variables.
 
 ---
